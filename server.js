@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI, {  userNewUrlParser: true, userUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, {  })
     .then(() => console.log("Mongo Connected"))
     .catch(err => console.log(err));
 
